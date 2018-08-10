@@ -19,7 +19,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: pink;
+  background-color: #fff;
+  padding: 5px 10px;
 }
 
 .pyg_footer {
