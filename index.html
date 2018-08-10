@@ -19,12 +19,35 @@
       <input type="search" class="mui-input-clear" placeholder="">
     </div>
   </header>
-  <!-- 轮播图 -->
+
   <div class="pyg_view">
+    <!-- 轮播图 -->
+    <div class="index_slider"></div>
+    <!-- 导航 -->
+    <nav class="index_nav"></nav>
+    <!-- 商品列表 -->
+    <div class="index_goodsList">
 
+    </div>
   </div>
-  <footer class="pyg_footer"></footer>
-
+  <footer class="pyg_footer">
+    <a href="javascript:;">
+      <span class="fa fa-home"></span>
+      <p>首页</p>
+    </a>
+    <a href="javascript:;">
+      <span class="fa fa-list-ul"></span>
+      <p>分类</p>
+    </a>
+    <a href="javascript:;">
+      <span class="fa fa-shopping-cart"></span>
+      <p>购物车</p>
+    </a>
+    <a href="javascript:;">
+      <span class="fa fa-user-circle-o"></span>
+      <p>我的</p>
+    </a>
+  </footer>
 
 
 
@@ -62,6 +85,38 @@
         {{/if}} {{/each}}
       </div>
     </div>
+  </script>
+  <!-- 导航模板 -->
+  <script id="catitems" type="text/xxx-template">
+    {{each data value}}
+    <a href="{{value.navigator_url}}">
+      <img src="{{value.image_src}}" alt="">
+    </a>
+    {{/each}}
+  </script>
+  <!-- 内容模板 -->
+  <script id="goodslist" type="text/xxx-template">
+    {{each data value}}
+    <div class="goods_group">
+      <div class="title">
+        <img src="{{value.group_img}}" alt="">
+      </div>
+      <div class="content">
+        <ul>
+          {{each value.goods value2}}
+          <li>
+            <a href="javascript:;" class="link">
+              <img src="{{value2.goods_small_logo}}" alt="">
+              <div class="name">{{value2.goods_name}}</div>
+              <div class="price">¥ {{value2.goods_price}}</div>
+            </a>
+            <a href="javascript:;" class="like">找相似</a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{/each}}
   </script>
   <script src="/lib/mui/js/mui.js"></script>
   <script src="/lib/arttemplate/template-web.js"></script>
