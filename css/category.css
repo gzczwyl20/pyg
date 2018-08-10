@@ -1,6 +1,13 @@
 /**/
 body {
   line-height: normal;
+  background-color: #fff;
+}
+
+.pyg_header {
+  -webkit-box-shadow: 0 1px 6px #ccc;
+          box-shadow: 0 1px 6px #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .pyg_view {
@@ -14,14 +21,57 @@ body {
   width: 1rem;
   font-size: .2rem;
   overflow: hidden;
-  background-color: pink;
+}
+
+.pyg_view .left li {
+  height: .4rem;
+  background-color: #efeff4;
+  text-align: center;
+  line-height: .4rem;
+  font-size: .14rem;
+}
+
+.pyg_view .left .active {
+  border-left: 5px solid #0094ff;
+  background-color: #fff;
 }
 
 .pyg_view .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow: scroll;
-  background-color: orange;
+  overflow: hidden;
+}
+
+.pyg_view .right .product .tit {
+  padding: .1rem;
+  color: #0094ff;
+  font-size: .12rem;
+  text-indent: .1rem;
+  position: relative;
+}
+
+.pyg_view .right .product .tit span {
+  width: 67%;
+  height: 1px;
+  background-color: #2b2b2b;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+
+.pyg_view .right .product .cont li {
+  width: 33.3333%;
+  float: left;
+}
+
+.pyg_view .right .product .cont li img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.pyg_view .right .product .cont li .name {
+  text-align: center;
+  font-size: .12rem;
 }
 /*# sourceMappingURL=category.css.map */

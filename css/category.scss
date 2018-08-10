@@ -1,6 +1,11 @@
 /**/
 body {
   line-height: normal;
+  background-color: #fff;
+}
+.pyg_header{
+  box-shadow: 0 1px 6px #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .pyg_view{
   overflow: hidden;
@@ -9,11 +14,53 @@ body {
     width: 1rem;
     font-size: .2rem;
     overflow: hidden;
-    background-color: pink;
+    li {
+      height: .4rem;
+      background-color: #efeff4;
+      text-align: center;
+      line-height: .4rem;
+      font-size: .14rem;
+    }
+    .active {
+      border-left: 5px solid #0094ff;
+      background-color: #fff;
+    }
   }
   .right{
     flex: 1;
-    overflow: scroll;
-    background-color: orange;
+    overflow: hidden;
+    .product {
+      .tit{
+        padding: .1rem;
+        color: #0094ff;
+        font-size: .12rem;
+        text-indent: .1rem;
+        position: relative;
+        span {
+          width: 67%;
+          height: 1px;
+          background-color: #2b2b2b;
+          position: absolute;
+          right: 5%;
+          top:50%;
+        }
+      }
+      .cont{
+        // display: flex;
+        // flex-wrap: wrap;
+        li {
+          width: 33.3333%;
+          float: left;
+          img {
+            width: 70%;
+            margin: 0 auto;
+          }
+          .name {
+            text-align: center;
+            font-size: .12rem;
+          }
+        }
+      }
+    }
   }
 }
