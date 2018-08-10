@@ -1,0 +1,19 @@
+/**/
+body {
+  line-height: normal;
+}
+.pyg_view{
+  overflow: hidden;
+  display: flex;
+  .left{
+    width: 1rem;
+    font-size: .2rem;
+    overflow: hidden;
+    background-color: pink;
+  }
+  .right{
+    flex: 1;
+    overflow: scroll;
+    background-color: orange;
+  }
+}
