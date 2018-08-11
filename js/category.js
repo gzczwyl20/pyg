@@ -2,6 +2,7 @@ $(function () {
   init();
   var leftscroll;
   var rightscroll;
+
   function init() {
     setHTML();
     getCategories(function (res) {
@@ -22,7 +23,7 @@ $(function () {
       var nums = $('.right img').length
       $(".right img").on("load", function () {
         nums--;
-        if(nums==0){
+        if (nums == 0) {
           rightscroll = new IScroll('.right');
         }
       })
@@ -72,7 +73,7 @@ $(function () {
       var nums = $('.right img').length
       $(".right img").on("load", function () {
         nums--;
-        if(nums==0){
+        if (nums == 0) {
           rightscroll = new IScroll('.right');
         }
       })

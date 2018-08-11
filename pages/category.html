@@ -70,8 +70,10 @@
       <ul class="cont mui-clearfix">
         {{each value.children value1}}
         <li>
+          <a href="good_list.html?cid={{value1.cat_id}}">
           <img src="{{$imports.iconUrl}}{{value1.cat_icon}}" alt="">
           <div class="name">{{value1.cat_name}}</div>
+          </a>
         </li>
         {{/each}}
       </ul>
