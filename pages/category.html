@@ -33,7 +33,7 @@
     </div>
   </div>
   <footer class="pyg_footer">
-    <a href="javascript:;">
+    <a href="/index.html">
       <span class="fa fa-home"></span>
       <p>首页</p>
     </a>
@@ -70,7 +70,7 @@
       <ul class="cont mui-clearfix">
         {{each value.children value1}}
         <li>
-          <img src="http://api.pyg.ak48.xyz/{{value1.cat_icon}}" alt="">
+          <img src="{{$imports.iconUrl}}{{value1.cat_icon}}" alt="">
           <div class="name">{{value1.cat_name}}</div>
         </li>
         {{/each}}

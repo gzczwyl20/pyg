@@ -1,6 +1,7 @@
 $(function(){
-  var BaseUrl = 'http://api.pyg.ak48.xyz/api/public/v1/';
+  var BaseUrl = 'http://api.pyg.ak48.xyz/';
+  template.defaults.imports.iconUrl = BaseUrl;
   $.ajaxSettings.beforeSend=function (xhr,obj) {
-    obj.url = BaseUrl + obj.url;
+    obj.url = BaseUrl +'api/public/v1/' + obj.url;
   }
 })

@@ -1,6 +1,7 @@
 $(function () {
   init();
-
+  var leftscroll;
+  var rightscroll;
   function init() {
     setHTML();
     getCategories(function (res) {
@@ -9,7 +10,7 @@ $(function () {
         data: res.data
       });
       $('.view_title').html(leftHtml);
-      var leftscroll = new IScroll('.left');
+      leftscroll = new IScroll('.left');
     });
     getCategories(function (res) {
       // console.log(res.data[0].children);
@@ -18,7 +19,13 @@ $(function () {
         data: res.data[0].children
       })
       $('.right_box').html(rightHtml);
-      var rightscroll = new IScroll('.right');
+      var nums = $('.right img').length
+      $(".right img").on("load", function () {
+        nums--;
+        if(nums==0){
+          rightscroll = new IScroll('.right');
+        }
+      })
     })
   }
 
@@ -48,11 +55,12 @@ $(function () {
   }
 
   // 点击按钮渲染页面
-  $('.view_title').on('tap','li',function(){
+  $('.view_title').on('tap', 'li', function () {
     // console.log(123);
     var val = this.dataset.val;
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
+    leftscroll.scrollToElement(this);
     // console.log(val);
     getCategories(function (res) {
       // console.log(res.data[0].children);
@@ -61,8 +69,14 @@ $(function () {
         data: res.data[val].children
       })
       $('.right_box').html(rightHtml);
-      var rightscroll = new IScroll('.right');
+      var nums = $('.right img').length
+      $(".right img").on("load", function () {
+        nums--;
+        if(nums==0){
+          rightscroll = new IScroll('.right');
+        }
+      })
     })
-    
+
   })
 })
