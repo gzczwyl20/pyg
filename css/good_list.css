@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/**/
+body {
+  padding-top: 90px;
+}
+
+.search_header {
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: pink;
+}
+
+.search_bar {
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 45px;
+  left: 0;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search_bar a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  color: #000;
+}
+
+/*内容*/
+.pyg_view {
+  padding: 5px;
+  position: relative;
+}
+
+.pyg_view ul li {
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.pyg_view ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view ul li a .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pyg_view ul li a .left img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.pyg_view ul li a .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  overflow: hidden;
+}
+/*# sourceMappingURL=good_list.css.map */

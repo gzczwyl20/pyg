@@ -1,0 +1,54 @@
+/**/
+body {
+  padding-top: 90px;
+}
+.search_header{
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: pink;
+}
+.search_bar{
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 45px;
+  left: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  a {
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+  }
+}
+
+/*内容*/
+.pyg_view {
+  padding:5px;
+  position: relative;
+  ul {
+    li {
+      background-color: #fff;
+      margin-bottom: 5px;
+      a {
+        display: flex;
+        .left{
+          flex: 1;
+          img {
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+        .right{
+          flex: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
