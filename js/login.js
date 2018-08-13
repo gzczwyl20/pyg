@@ -22,6 +22,7 @@ $(function () {
       },function(res){
         console.log(res);
         if(res.meta.status == 200){
+          localStorage.setItem('token',res.data.token)
           mui.toast(res.meta.msg)
           setTimeout(() => {
           location.href = '/index.html'
