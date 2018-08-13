@@ -1,7 +1,7 @@
 $(function () {
   var obj = {
     query: '',
-    cid: getUrl('cid'),
+    cid: $.getUrl('cid'),
     pagenum: 1,
     pagesize: 5
   }
@@ -45,13 +45,7 @@ $(function () {
     });
   }
 
-  //获取url中的参数
-  function getUrl(name) {
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-    var r = window.location.search.substr(1).match(reg);
-    if (r != null) return decodeURI(r[2]);
-    return null;
-  }
+
 
   //发送请求
   function search(callback) {
@@ -66,4 +60,8 @@ $(function () {
       callback && callback();
     }, 'json')
   }
+
+  mui('body').on('tap','a',function(){
+    window.top.location.href=this.href;
+});
 })

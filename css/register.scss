@@ -1,0 +1,26 @@
+/**/
+
+.pyg_form {
+  padding: 10px;
+  font-size: 14px;
+  input {
+    font-size: 14px;
+  }
+  .yanzhenma {
+    position: relative;
+    #code_btn {
+      position: absolute;
+      right: 5px;
+      top: 0;
+      width: auto;
+    }
+  }
+  .pyg_btn {
+    display: flex;
+    margin-top: 10px;
+    button {
+      flex: 1;
+      padding: 10px 0;
+    }
+  }
+}

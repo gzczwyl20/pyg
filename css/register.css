@@ -1,0 +1,35 @@
+/**/
+.pyg_form {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.pyg_form input {
+  font-size: 14px;
+}
+
+.pyg_form .yanzhenma {
+  position: relative;
+}
+
+.pyg_form .yanzhenma #code_btn {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  width: auto;
+}
+
+.pyg_form .pyg_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.pyg_form .pyg_btn button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0;
+}
+/*# sourceMappingURL=register.css.map */
