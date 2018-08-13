@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/**/
+.pyg_view {
+  background-color: #fff;
+}
+
+.pyg_view .goods_name {
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+.pyg_view .goods_price {
+  font-size: 23px;
+  color: orange;
+  padding: 5px;
+}
+
+.pyg_view .goods_send {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.pyg_view .goods_send li {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view .goods_send li span:first-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  color: #ccc;
+}
+
+.pyg_view .goods_send li span:last-child {
+  color: #666;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.pyg_view .goods_info {
+  padding: 0 5px 5px;
+}
+
+.pyg_view .goods_info #item1 * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pyg_view .goods_info #item2 {
+  background-color: #efeff4;
+  padding: 0 5px;
+}
+
+.pyg_view .goods_info #item2 .tit {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6d6d72;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.pyg_view .goods_info #item2 .content {
+  font-size: 12px;
+  padding: 5px 0;
+  color: #797372;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view .goods_info #item2 .content span:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pyg_view .goods_info #item2 .content span:last-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+/*底部*/
+#pyg_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#pyg_footer a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid #ccc;
+}
+
+#pyg_footer a:last-child {
+  border-right: none;
+  background-color: #ff6600;
+}
+
+#pyg_footer a:last-child span {
+  color: #fff;
+}
+
+#pyg_footer a:nth-child(3) {
+  background-color: #ffaa00;
+}
+
+#pyg_footer a:nth-child(3) span {
+  color: #fff;
+}
+
+#pyg_footer a span {
+  font-size: 14px;
+  color: #666;
+}
+
+#pyg_footer a .mui-icon {
+  font-size: 22px;
+}
+/*# sourceMappingURL=goods_detail.css.map */
