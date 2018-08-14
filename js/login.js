@@ -16,21 +16,28 @@ $(function () {
         mui.toast('密码最少为6位数')
         return
       }
-      $.post('login',{
-        username:mobile_txt,
-        password:pwd_txt
-      },function(res){
+      $.post('login', {
+        username: mobile_txt,
+        password: pwd_txt
+      }, function (res) {
         console.log(res);
-        if(res.meta.status == 200){
-          localStorage.setItem('token',res.data.token)
+        if (res.meta.status == 200) {
+          // console.log(location.href);
+
+          localStorage.setItem('userInfo', JSON.stringify(res.data))
           mui.toast(res.meta.msg)
           setTimeout(() => {
-          location.href = '/index.html'
+            var pageName = sessionStorage.getItem('pageName')
+            if (pageName) {
+              location.href = pageName
+            } else {
+              location.href = '/index.html'
+            }
           }, 1000);
-        }else {
+        } else {
           mui.toast(res.meta.msg)
         }
-      },'json')
+      }, 'json')
     })
   }
 })
