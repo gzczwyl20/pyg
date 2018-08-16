@@ -1,0 +1,28 @@
+/**/
+.pyg_view #segmentedControl {
+  background-color: #fff;
+}
+
+.pyg_view #item1 {
+  padding: 20px;
+}
+
+.pyg_view #item1 ul {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.pyg_view #item1 ul li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.pyg_view #item1 ul li p {
+  margin: 0;
+}
+
+.pyg_view #item1 ul li .mui-pull-right {
+  color: red;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=order.css.map */

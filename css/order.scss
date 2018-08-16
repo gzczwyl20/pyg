@@ -1,0 +1,25 @@
+/**/
+.pyg_view{
+  #segmentedControl{
+    background-color: #fff;
+  }
+  #item1{
+    padding:20px;
+    ul{
+      padding:10px;
+      background-color: #fff;
+      li {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        p {
+          margin:0;
+        }
+        .mui-pull-right{
+          color: red;
+          margin-right: 20px;
+        }
+      }
+    }
+    
+  }
+}

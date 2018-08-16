@@ -1,0 +1,91 @@
+/**/
+body {
+  display: none;
+}
+.pyg_body {
+  display: block;
+}
+.pyg_view{
+  padding: 20px 10px;
+  .useInfo{
+    background-color: #fff;
+    display: flex;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    span {
+      flex: 1;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .con {
+      flex: 4;
+      p {
+        margin:0;
+      }
+      .useName{
+        color: #000;
+        font-size: 18px;
+      }
+      .useEmail{}
+    }
+  }
+  .pyg_order{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .tit{
+      padding:10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .content{
+      display: flex;
+      text-align: center;
+      a {
+        flex:1;
+        padding: 5px 0;
+        font-size: 14px;
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .pyg_pwd{
+    margin-top: 10px;
+    padding:10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      .fa {
+        margin-right: 10px;
+        color: #ccc;
+      }
+    }
+  }
+  .pyg_contack{
+    margin-top: 10px;
+    padding:10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      .fa {
+        margin-right: 10px;
+        color: #ccc;
+      }
+    }
+  }
+  .loginOut{
+    margin-top: 10px;
+    button {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+  }
+}

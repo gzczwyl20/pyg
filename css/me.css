@@ -1,0 +1,127 @@
+/**/
+body {
+  display: none;
+}
+
+.pyg_body {
+  display: block;
+}
+
+.pyg_view {
+  padding: 20px 10px;
+}
+
+.pyg_view .useInfo {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.pyg_view .useInfo span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pyg_view .useInfo .con {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.pyg_view .useInfo .con p {
+  margin: 0;
+}
+
+.pyg_view .useInfo .con .useName {
+  color: #000;
+  font-size: 18px;
+}
+
+.pyg_view .pyg_order {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.pyg_view .pyg_order .tit {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pyg_view .pyg_order .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.pyg_view .pyg_order .content a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.pyg_view .pyg_order .content a span {
+  font-size: 18px;
+}
+
+.pyg_view .pyg_pwd {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pyg_view .pyg_pwd li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pyg_view .pyg_pwd li .fa {
+  margin-right: 10px;
+  color: #ccc;
+}
+
+.pyg_view .pyg_contack {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pyg_view .pyg_contack li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pyg_view .pyg_contack li .fa {
+  margin-right: 10px;
+  color: #ccc;
+}
+
+.pyg_view .loginOut {
+  margin-top: 10px;
+}
+
+.pyg_view .loginOut button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+}
+/*# sourceMappingURL=me.css.map */

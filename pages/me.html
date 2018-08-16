@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人中心</title>
+  <link rel="stylesheet" href="/lib/mui/css/mui.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/me.css">
+</head>
+
+<body>
+  <header id="header" class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">个人中心</h1>
+  </header>
+  <!-- 内容 -->
+  <div class="pyg_view">
+    <!-- 用户信息 -->
+    <div class="useInfo">
+     
+    </div>
+    <!-- 订单管理 -->
+    <div class="pyg_order">
+      <div class="tit">订单管理</div>
+      <div class="content">
+        <a href="javascript:;">
+          <span class="fa fa-credit-card-alt"></span>
+          <div class="cc">待付款</div>
+        </a>
+        <a href="javascript:;">
+          <span class="fa fa-institution"></span>
+          <div class="cc">待收货</div>
+        </a>
+        <a href="javascript:;">
+          <span class="fa fa-money"></span>
+          <div class="cc">退款/售后</div>
+        </a>
+        <a href="javascript:;">
+          <span class="fa fa-clipboard"></span>
+          <div class="cc">全部订单</div>
+        </a>
+      </div>
+    </div>
+    <!-- 密码 -->
+    <div class="pyg_pwd">
+      <ul class="mui-clearfix">
+        <li>修改登录密码<span class="mui-pull-right fa fa-angle-right"></span></li>
+        <li>支付密码管理<span class="mui-pull-right fa fa-angle-right"></span></li>
+        <li>收货地址管理<span class="mui-pull-right fa fa-angle-right"></span></li>
+      </ul>
+    </div>
+    <!-- 客服 -->
+    <div class="pyg_contack">
+      <ul class="mui-clearfix">
+        <li>联系客服<span class="mui-pull-right">4000-xxx-xxx-xxx</span></li>
+        <li>意见反馈<span class="mui-pull-right fa fa-angle-right"></span></li>
+        <li>关于我们<span class="mui-pull-right fa fa-angle-right"></span></li>
+      </ul>
+    </div>
+    <!-- 退出登录 -->
+    <div class="loginOut">
+      <button type="button" class="mui-btn mui-btn-danger">退出登录</button>
+    </div>
+  </div>
+
+  <footer class="pyg_footer">
+    <a href="/index.html">
+      <span class="fa fa-home"></span>
+      <p>首页</p>
+    </a>
+    <a href="/pages/category.html">
+      <span class="fa fa-list-ul"></span>
+      <p>分类</p>
+    </a>
+    <a href="/pages/cart.html">
+      <span class="fa fa-shopping-cart"></span>
+      <p>购物车</p>
+    </a>
+    <a href="/pages/me.html">
+      <span class="fa fa-user-circle-o"></span>
+      <p>我的</p>
+    </a>
+  </footer>
+
+
+<!-- 模板引擎 -->
+<script id="mainTpl" type="text/template">
+  <span class="fa fa-user-circle"></span>
+  <div class="con">
+    <p class="useName">{{data.username}}</p>
+    <p class="useEmail">{{data.user_email}}</p>
+  </div>
+</script>
+
+  <script src="/lib/mui/js/mui.js"></script>
+  <script src="/lib/arttemplate/template-web.js"></script>
+  <script src="/lib/iscroll/iscroll.js"></script>
+  <script src="/lib/zepto/zepto.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/me.js"></script>
+
+</body>
+
+</html>
