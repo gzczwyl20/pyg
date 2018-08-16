@@ -38,12 +38,21 @@ $(function () {
     //     }, 1000);
     //   }
     // },'json')
+    if(!localStorage.getItem('userInfo')){
+      mui.toast('请先登录')
+      sessionStorage.setItem('pageName',location.href)
+      setTimeout(() => {
+        location.href = '/pages/login.html'
+      }, 1000)
+      return
+    }
+    var token = JSON.parse(localStorage.getItem('userInfo')).token
     $.ajax({
       url:'my/cart/add',
       type:'post',
       data:{info:JSON.stringify(GoodsObj)},
       headers:{
-        Authorization:JSON.parse(localStorage.getItem('userInfo')).token
+        Authorization:token
       },
       success:function(res){
         console.log(res);

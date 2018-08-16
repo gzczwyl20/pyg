@@ -1,0 +1,152 @@
+/**/
+body{
+  display: none;
+}
+.now{
+  display: block;
+}
+.pyg_view{
+  padding: 50px 10px;
+  .address{
+    .tit{
+      font-size: 14px;
+      color: #666;
+    }
+    .cont{
+    background-color: #fff;
+    display: flex;
+    padding: 10px 0;
+    span{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .info {
+      flex: 7;
+      position: relative;
+      &::after{
+        content:"\e583";
+        position: absolute;
+        right: 0;
+        font-family: Muiicons;
+        font-size: inherit;
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-decoration: none;
+        color: #bbb;
+        -webkit-font-smoothing: antialiased;
+      }
+      p {
+        margin: 0;
+        &:first-child{
+          color: #000;
+          font-size: 18px;
+        }
+        &:last-child{
+          font-size: 14px;
+        }
+      }
+    }
+    }
+  }
+  .order{
+    margin-top: 30px;
+    .tit{
+      font-size: 14px;
+      color: #666;
+    }
+    .cont{
+      position: relative;
+      background-color: #fff;
+      padding:10px 30px 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      &::after{
+        content:"\e583";
+        position: absolute;
+        right: 0;
+        font-family: Muiicons;
+        font-size: inherit;
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-decoration: none;
+        color: #bbb;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+  .pyg_cart{
+    margin-top: 30px;
+    .tit{
+      font-size: 14px;
+      color: #666;
+    }
+    ul{
+      li{
+        background-color: #fff;
+        display: flex;
+        padding:5px;
+        .check_box{
+          flex: 1;
+          // position: relative;
+          overflow: inherit !important;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          input{
+            position: static;
+          }
+        }
+        .cart_img{
+          flex: 1.5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 20px 0 5px;
+        }
+        .cart_info{
+          flex:4;
+          font-size: 14px;
+          color: #666;
+          .info_b{
+            margin-top: 10px;
+            color: #000;
+            display: flex;
+            span{
+              font-size: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.del_btn{
+  display: none;
+}
+.mui-numbox{
+  display: none;
+}
+#pyg_body.active{
+  .del_btn{
+    display: block;
+  }
+  .check_box{
+    display: flex;
+  }
+  .mui-numbox{
+    display: block;
+  }
+}

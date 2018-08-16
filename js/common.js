@@ -35,6 +35,12 @@ $(function () {
       } else {　　　　
         return false;
       }
+    },
+    token:function(){
+      return token =localStorage.getItem('userInfo')? JSON.parse(localStorage.getItem('userInfo')).token:{}
+    },
+    setPage:function () {
+      return sessionStorage.setItem('pageName', location.href)
     }
   })
 })
