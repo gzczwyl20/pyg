@@ -80,6 +80,22 @@ $(function () {
       $('.record ul').html(str)
     })
     $('.search_btn').on('tap', function () {
+
+      var val = $.trim($('.search input').val());
+      if (val == '') {
+        return
+      }
+      // console.log(JSON.parse(localStorage.getItem('history')));
+      var arr = localStorage.getItem('history') ? JSON.parse(localStorage.getItem('history')) : [];
+      for (var i = 0; i < arr.length; i++) {
+        if (val == arr[i]) {
+          return;
+        }
+      }
+      // console.log(arr);
+
+      arr.unshift(val);
+      localStorage.setItem('history', JSON.stringify(arr))
       var val = $('.search input').val();
 
       $.ajax({
